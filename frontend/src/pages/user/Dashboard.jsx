@@ -46,7 +46,7 @@ const Dashboard = () => {
             >
               <div className="w-full h-40 mb-4 overflow-hidden rounded-md border border-gray-200">
                 <img
-                  src={item.thumbnail ? item.thumbnail : "/12.png"}
+                  src={item.thumbnail ? item.thumbnail : "/profilelogo.png"}
                   alt={item.title}
                   className="w-full h-full object-cover"
                 />

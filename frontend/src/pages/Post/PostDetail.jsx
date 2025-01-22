@@ -7,18 +7,18 @@ import useAuth from "../../hooks/useAuth";
 import toast from "react-hot-toast";
 
 const PostDetail = () => {
-      const {id} = useParams();
-      const { post, isLoading } = useSelector((state) => state.post);
+    const {id} = useParams();
+    const { post, isLoading } = useSelector((state) => state.post);
     const dispatch = useDispatch()
     const navigate = useNavigate()
 
     const {user,loading} = useAuth()
 
-  useEffect(() => {
-     if(!user && !loading){
-       navigate("/login")
-     }
-  }, [user,loading])
+  // useEffect(() => {
+  //    if(!user && !loading){
+  //      navigate("/login")
+  //    }
+  // }, [user,loading])
     
 
    useEffect(() => {
@@ -69,7 +69,7 @@ const PostDetail = () => {
           <h1 className="text-3xl sm:text-4xl font-bold mb-4">{post?.title}</h1>
           <div className="mb-4">
             <img
-              src={post?.thumbnail ? post?.thumbnail : "/12.png"}
+              src={post?.thumbnail ? post?.thumbnail : "/profilelogo.png"}
               alt="Post"
               className="w-full mx-auto rounded-lg object-cover h-auto max-w-md"
             />

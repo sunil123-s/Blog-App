@@ -33,7 +33,7 @@ const Authors = () => {
               >
                 <div className="w-24 h-24 border-4 border-gray-200 rounded-full overflow-hidden">
                   <img
-                    src={item.avatar ? item.avatar : "/12.png"}
+                    src={item.avatar ? item.avatar : "/profilelogo.png"}
                     alt={item.name}
                     className="w-full h-full object-cover"
                   />

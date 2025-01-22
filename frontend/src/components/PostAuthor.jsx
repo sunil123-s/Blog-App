@@ -29,7 +29,7 @@ const PostAuthor = ({ createdAt , creator}) => {
     <div className="">
       <Link to={`/posts/users/${creator}`} className="flex items-center gap-2">
         <div className="w-8 h-8 rounded-lg border overflow-hidden aspect-auto">
-          <img src={author?.avatar ? author.avatar : "/12.png"} alt="" />
+          <img src={author?.avatar ? author.avatar : "/"} alt="" />
         </div>
         <div className="text-xs">
           <h5 className="font-bold">By: {author?.name}</h5>

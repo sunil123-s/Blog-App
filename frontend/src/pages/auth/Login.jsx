@@ -37,10 +37,17 @@ const Login = () => {
     <div className="pt-56">
       <div className="max-w-md mx-auto p-6 bg-white shadow-md rounded-lg sm:w-full sm:max-w-lg ">
         <div className="mb-4">
+          <form className="relative space-y-4" onSubmit={handelLogin}>
+              <button
+                onClick={() => navigate("/home")}
+                type="button"
+                className="absolute top-0 right-0 text-gray-500 hover:text-gray-800 text-2xl font-bold"
+              >
+                x
+              </button>
           <h2 className="text-2xl sm:text-3xl font-bold text-center mb-4">
             Login
           </h2>
-          <form className="space-y-4" onSubmit={handelLogin}>
             <input
               type="email"
               placeholder="Email"

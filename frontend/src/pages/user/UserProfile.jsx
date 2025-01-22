@@ -70,7 +70,7 @@ const UserProfile = () => {
         <div className="flex flex-col items-center">
           <div className="relative w-40 h-40 rounded-3xl overflow-hidden border-2 border-gray-200 mb-4">
             <img
-              src={uploadImg ? uploadImg : "/12.png"}
+              src={uploadImg ? uploadImg : "/profilelogo.png"}
               alt="Profile"
               className={`w-full h-full object-cover transition-all duration-200 ${
                 isLoading ? "opacity-50 filter grayscale" : ""

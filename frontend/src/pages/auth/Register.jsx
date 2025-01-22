@@ -49,12 +49,18 @@ const Register = () => {
 
   return (
     <div className="pt-56">
-      <div className="max-w-md mx-auto p-6 bg-white shadow-md rounded-lg sm:w-full sm:max-w-lg">
+      <div className=" relative max-w-md mx-auto p-6 bg-white shadow-md rounded-lg sm:w-full sm:max-w-lg">
+               <button
+                 onClick={() => navigate("/home")}
+                 className="absolute top-2 right-2 text-gray-500 hover:text-gray-800 text-2xl font-bold p-5"
+               >
+                 x
+               </button>;
         <h2 className="text-2xl font-bold text-center mb-4">Sign Up</h2>
         <form className="space-y-4" onSubmit={handleRegister}>
           <div className="relative w-28 h-28 rounded-full overflow-hidden border-2 m-auto border-gray-200 mb-4">
             <img
-              src={uploadImg ? uploadImg : "/12.png"}
+              src={uploadImg ? uploadImg : "/profilelogo.png"}
               alt=""
               className="w-full h-full object-cover"
             />

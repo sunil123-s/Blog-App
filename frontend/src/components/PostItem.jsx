@@ -17,7 +17,7 @@ const PostItem = ({ item }) => {
       <div className="w-full h-48 md:h-56 overflow-hidden">
         <img
           className="w-full h-full object-cover transition-transform duration-300 hover:scale-110"
-          src={item?.thumbnail ? item?.thumbnail : '/12.png'}
+          src={item?.thumbnail ? item?.thumbnail : "/profilelogo.png"}
           alt={item.title}
         />
       </div>
