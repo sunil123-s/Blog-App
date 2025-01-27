@@ -28,22 +28,16 @@ const Fotter = () => {
             Entertainment
           </Link>
         </li>
-        <li>
-          <Link to="/posts/categories/Investment" className="hover:underline">
-            Investment
-          </Link>
-        </li>
-        <li>
+        {/* <li>
           <Link
             to="/posts/categories/Uncategorized"
             className="hover:underline"
           >
-            Uncategorized
           </Link>
-        </li>
+        </li> */}
         <li>
-          <Link to="/posts/categories/Weather" className="hover:underline">
-            Weather
+          <Link to="/posts/categories/Wildlife" className="hover:underline">
+            Wildlife
           </Link>
         </li>
       </ul>

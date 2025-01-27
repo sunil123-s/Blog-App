@@ -142,7 +142,6 @@ export const changeAvatar = async(req , res) => {
     }
 }
 
-
 export const editUser = async (req, res) => {
   try {
     const userId = req.params.id;

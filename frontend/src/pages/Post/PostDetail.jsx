@@ -14,13 +14,6 @@ const PostDetail = () => {
 
     const {user,loading} = useAuth()
 
-  // useEffect(() => {
-  //    if(!user && !loading){
-  //      navigate("/login")
-  //    }
-  // }, [user,loading])
-    
-
    useEffect(() => {
      dispatch(fetchSinglePost(id))
    }, [dispatch,id])
@@ -71,7 +64,7 @@ const PostDetail = () => {
             <img
               src={post?.thumbnail ? post?.thumbnail : "/profilelogo.png"}
               alt="Post"
-              className="w-full mx-auto rounded-lg object-cover h-auto max-w-md"
+              className="w-full max-w-4xl mx-auto rounded-lg"
             />
           </div>
           <div

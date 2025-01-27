@@ -1,7 +1,12 @@
 
 export const postCategory = [
-  "Agriculture", "Business", "Eduction", "Enterainment", "Art", "Investment", "All", "Weather"
-]
+  "Agriculture",
+  "Business",
+  "Education",
+  "Entertainment",
+  "All",
+  "Wildlife",
+];
 
 export const modules = {
   toolbar: [

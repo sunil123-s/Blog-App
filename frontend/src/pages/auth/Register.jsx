@@ -50,36 +50,37 @@ const Register = () => {
   return (
     <div className="pt-56">
       <div className=" relative max-w-md mx-auto p-6 bg-white shadow-md rounded-lg sm:w-full sm:max-w-lg">
-               <button
-                 onClick={() => navigate("/home")}
-                 className="absolute top-2 right-2 text-gray-500 hover:text-gray-800 text-2xl font-bold p-5"
-               >
-                 x
-               </button>;
+        <button
+          onClick={() => navigate("/home")}
+          className="absolute top-2 right-2 text-gray-500 hover:text-gray-800 text-2xl font-bold p-5"
+        >
+          x
+        </button>
         <h2 className="text-2xl font-bold text-center mb-4">Sign Up</h2>
         <form className="space-y-4" onSubmit={handleRegister}>
           <div className="relative w-28 h-28 rounded-full overflow-hidden border-2 m-auto border-gray-200 mb-4">
             <img
               src={uploadImg ? uploadImg : "/profilelogo.png"}
               alt=""
-              className="w-full h-full object-cover"
+              className={`w-full h-full object-cover ${
+                isLoading ? "opacity-50 filter grayscale" : ""
+              }`}
             />
-              <ImageUplaod
-                imageFile={imageFile}
-                setisloading={setisloading}
-                setimageFile={setimageFile}
-                setuploadImg={setuploadImg}
-                showInput={true}
-                imageType="avatar"
-              />
+            <ImageUplaod
+              imageFile={imageFile}
+              setisloading={setisloading}
+              setimageFile={setimageFile}
+              setuploadImg={setuploadImg}
+              showInput={true}
+              imageType="avatar"
+            />
           </div>
-              <label
-                htmlFor="imgaeUpload"
-                className="absolute top-[350px] right-[900px] bg-blue-500 p-2 rounded-full text-white cursor-pointer shadow-lg"
-              >
-                <FaEdit className="text-sm" />
-              </label>
-
+          <label
+            htmlFor="imgaeUpload"
+            className="absolute top-[130px] right-[200px] bg-blue-500 p-2 rounded-full text-white cursor-pointer shadow-lg"
+          >
+            <FaEdit className="text-sm" />
+          </label>
           <input
             type="text"
             placeholder="Name"
